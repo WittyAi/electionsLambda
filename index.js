@@ -9,14 +9,7 @@ const config = {
   password : process.env.password,
   database : process.env.database
 };
-/*
-const config = {
-  host     : 'elections.ct3lkgaxseul.sa-east-1.rds.amazonaws.com',
-  user     : 'rocketelections',
-  password : 'elections100%',
-  database : 'elections_dev'
-};
-*/
+
 class Database {
     constructor( config ) {
         this.connection = mysql.createConnection( config );
